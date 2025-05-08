@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>zikzzzStore</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+    }
+
+    header {
+      background-color: #ff33cc;
+      padding: 15px;
+      color: white;
+      font-weight: bold;
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #0099cc;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .sidebar {
+      background-color: #333;
+      color: white;
+      width: 250px;
+      padding: 20px;
+    }
+
+    .sidebar h3 {
+      margin-bottom: 15px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 10px;
+    }
+
+    .main-content {
+      flex-grow: 1;
+      padding: 20px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f3f3f3;
+    }
+  </style>
+</head>
+<body>
+
+<header>zikzzzStore</header>
+
+<nav>
+  <a href="#">Beranda</a>
+  <a href="#">Belanja</a>
+  <a href="#">Tentang Kami</a>
+  <a href="#">Pembelian</a>
+  <a href="#">Pembayaran</a>
+  <a href="#">Hubungi Kami</a>
+</nav>
+
+<div class="container">
+  <aside class="sidebar">
+    <h3>Kategori</h3>
+    <ul>
+      <li>Digital</li>
+      <li>Media Sosial</li>
+      <li>Editing</li>
+      <li>Template</li>
+      <li>Makanan</li>
+    </ul>
+  </aside>
+
+  <section class="main-content">
+    <div class="hero">
+      <h2>Selamat datang di zikzzzStore</h2>
+      <a href="#">BELI SEKARANG</a>
+    </div>
+
+    <div class="products">
+      <h2>Produk Unggulan</h2>
+      <div class="product-grid">
+        <div class="product">
+          <h3>Produk 1</h3>
+          <p>Deskripsi produk 1</p>
+          <a href="#">Beli</a>
+        </div>
+        <div class="product">
+          <h3>Produk 2</h3>
+          <p>Deskripsi produk 2</p>
+          <a href="#">Beli</a>
+        </div>
+        <div class="product">
+          <h3>Produk 3</h3>
+          <p>Deskripsi produk 3</p>
+          <a href="#">Beli</a>
+        </div>
+        <div class="product">
+          <h3>Produk 4</h3>
+          <p>Deskripsi produk 4</p>
+          <a href="#">Beli</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <a href="#">WhatsApp</a> | <a href="#">Telegram</a><br>
+  <p>© 2045 zikzzzStore</p>
+</footer>
+
+</body>
+</html>
